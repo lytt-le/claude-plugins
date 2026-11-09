@@ -1,0 +1,10 @@
+{
+  "name": "usage-band",
+  "version": "0.1.0",
+  "description": "One dim line above the prompt with the 5-hour usage limit and when it resets",
+  "types": "./types/index.d.ts",
+  "license": "MIT",
+  "author": {
+    "name": "lytt-le"
+  }
+}

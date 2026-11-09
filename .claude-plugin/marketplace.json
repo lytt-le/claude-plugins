@@ -1,0 +1,5 @@
+{
+  "name": "local-plugins",
+  "owner": { "name": "lyttle" },
+  "plugins": [{ "name": "usage-band", "source": "./usage-band", "description": "Usage-limit bar above the prompt" }]
+}
