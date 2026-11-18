@@ -7,7 +7,10 @@ const fiveHour = atom({ plugin: 'usage-band', key: 'fiveHour' } as const, null)
 
 function pick(limits: readonly SessionRateLimit[]): FiveHour | null {
   const w = limits.find(l => l.kind === 'five_hour')
-  return w ? { percent: w.percentUsed, resetsAt: w.resetsAt ?? null } : null
+  const week = limits.find(l => l.kind === 'seven_day')
+  return w
+    ? { percent: w.percentUsed, resetsAt: w.resetsAt ?? null, weekly: week ? week.percentUsed : null }
+    : null
 }
 
 function clock(iso: string): string {
@@ -44,8 +47,9 @@ export const register: Register = on => {
     const color = pct >= 75 ? 'red' : pct >= 50 ? 'yellow' : 'green'
     const at = v.resetsAt ? clock(v.resetsAt) : ''
     const label = `${pct}%${at ? ` · resets ${at}` : ''}`
+    const weekly = typeof v.weekly === 'number' ? ` · ${Math.round(v.weekly)}%` : ''
 
-    const width = Math.max(0, e.props.bodyColumns - label.length - 1)
+    const width = Math.max(0, e.props.bodyColumns - label.length - weekly.length - 1)
     const filled = Math.min(width, Math.round((Math.min(v.percent, 100) / 100) * width))
 
     return (
@@ -60,6 +64,7 @@ export const register: Register = on => {
           {' '}
           {label}
         </Text>
+        {weekly ? <Text color="gray">{weekly}</Text> : null}
       </Box>
     )
   })
