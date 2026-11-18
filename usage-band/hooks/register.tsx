@@ -47,7 +47,7 @@ export const register: Register = on => {
     const color = pct >= 75 ? 'red' : pct >= 50 ? 'yellow' : 'green'
     const at = v.resetsAt ? clock(v.resetsAt) : ''
     const label = `${pct}%${at ? ` · resets ${at}` : ''}`
-    const weekly = typeof v.weekly === 'number' ? ` · week ${Math.round(v.weekly)}%` : ''
+    const weekly = typeof v.weekly === 'number' ? ` · ${Math.round(v.weekly)}%` : ''
 
     const width = Math.max(0, e.props.bodyColumns - label.length - weekly.length - 1)
     const filled = Math.min(width, Math.round((Math.min(v.percent, 100) / 100) * width))
