@@ -37,7 +37,7 @@ function clock(iso: string): string {
 function day(iso: string): string {
   const d = new Date(iso)
   if (Number.isNaN(d.getTime())) return ''
-  return DAYS[d.getDay()]
+  return DAYS[d.getDay()] ?? ''
 }
 
 export const register: Register = on => {
