@@ -1,4 +1,4 @@
-export type FiveHour = { percent: number; resetsAt: string | null }
+export type FiveHour = { percent: number; resetsAt: string | null; weekly?: number | null }
 
 declare module 'claude-code' {
   interface PluginState {
