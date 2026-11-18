@@ -1,7 +1,7 @@
 {
   "name": "usage-band",
   "version": "0.2.0",
-  "description": "One dim line above the prompt with the 5-hour usage limit when it resets, and the weekly percentage",
+  "description": "Usage-limit bar above the prompt: 5-hour limit with reset time and weekly %, or the weekly limit with reset day on plans without a 5-hour window",
   "types": "./types/index.d.ts",
   "license": "MIT",
   "author": {
