@@ -1,0 +1,6 @@
+{
+  "name": "clawd-pet",
+  "version": "0.1.0",
+  "description": "A little orange Clawd that lives above your prompt, wanders, works alongside Claude, celebrates and naps.",
+  "types": "./types/index.d.ts"
+}

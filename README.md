@@ -19,3 +19,29 @@ claude plugin install usage-band --marketplace lytt-le/claude-plugins
 ```
 
 Answer `y` to add the marketplace, then pick the user scope.
+
+## clawd-pet
+
+A little orange Clawd who lives in the band above the Claude Code prompt, like a desktop pet.
+
+```
+ ▐▛███▜▌  ~ Bash
+▝▜█████▛▘
+  ▘▘ ▝▝
+```
+
+- **Idle:** wanders left and right, blinking.
+- **Working:** stands still and types while Claude runs a turn, with a bubble naming each tool it calls.
+- **Errors:** looks glum with a `!` when a tool fails or is denied.
+- **Done:** hops with a ♥ when the turn finishes.
+- **Bored:** dozes off (`zZz`) after two minutes with nothing happening.
+
+Commands: `/pet` to pet Clawd, `/pet hide`, `/pet show`, and `/pet size <tiny|small|normal|large>` (remembered across sessions). Collapse the band with ctrl+x ctrl+a.
+
+### Install
+
+```
+claude plugin install clawd-pet --marketplace lytt-le/claude-plugins
+```
+
+Or at the Claude Code prompt: `/plugin install clawd-pet --marketplace lytt-le/claude-plugins`. Answer `y` to add the marketplace, then pick the user scope.

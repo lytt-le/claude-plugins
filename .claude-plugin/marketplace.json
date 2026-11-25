@@ -1,5 +1,18 @@
 {
   "name": "local-plugins",
-  "owner": { "name": "lyttle" },
-  "plugins": [{ "name": "usage-band", "source": "./usage-band", "description": "Usage-limit bar above the prompt" }]
+  "owner": {
+    "name": "lyttle"
+  },
+  "plugins": [
+    {
+      "name": "usage-band",
+      "source": "./usage-band",
+      "description": "Usage-limit bar above the prompt"
+    },
+    {
+      "name": "clawd-pet",
+      "source": "./clawd-pet",
+      "description": "An animated Clawd pet above the prompt"
+    }
+  ]
 }
