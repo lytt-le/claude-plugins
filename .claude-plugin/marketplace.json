@@ -13,6 +13,11 @@
       "name": "clawd-pet",
       "source": "./clawd-pet",
       "description": "An animated Clawd pet above the prompt"
+    },
+    {
+      "name": "caterpillar-pet",
+      "source": "./caterpillar-pet",
+      "description": "An inchworm that crawls along above the prompt"
     }
   ]
 }

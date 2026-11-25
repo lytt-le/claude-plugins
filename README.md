@@ -45,3 +45,19 @@ claude plugin install clawd-pet --marketplace lytt-le/claude-plugins
 ```
 
 Or at the Claude Code prompt: `/plugin install clawd-pet --marketplace lytt-le/claude-plugins`. Answer `y` to add the marketplace, then pick the user scope.
+
+## caterpillar-pet
+
+A tiny green caterpillar that inches back and forth along the band above the prompt, the way a real inchworm moves: it arches its back to pull its rear end in, then rolls the hump forward and flattens out as its front end reaches ahead. It turns around at each edge.
+
+```
+▄▄▄▄▄▄▄▄   →   ▄▞▀▀▚▄   →   ▄▄▄▞▀▚▄   →   ▄▄▄▄▄▄▄▄
+```
+
+### Install
+
+```
+claude plugin install caterpillar-pet --marketplace lytt-le/claude-plugins
+```
+
+Or at the Claude Code prompt: `/plugin install caterpillar-pet --marketplace lytt-le/claude-plugins`. Answer `y` to add the marketplace, then pick the user scope.

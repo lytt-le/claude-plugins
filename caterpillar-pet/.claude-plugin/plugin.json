@@ -1,0 +1,7 @@
+{
+  "name": "caterpillar-pet",
+  "version": "0.1.0",
+  "description": "A little green caterpillar that wriggles back and forth above your prompt.",
+  "license": "MIT",
+  "types": "./types/index.d.ts"
+}
